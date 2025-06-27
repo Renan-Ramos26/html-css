@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática com Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+        }
+        .especial {
+            background-color: rgba(245, 5, 5, 0.452);
+        }
+        .especial::before{
+            content: '> ';
+        }
+        .especial::after{
+            content: '<';
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://www.youtube.com" target="_blank" rel="external">YouTube</a></li>
+        <li><a href="https://www.google.com" class="especial" target="_blank" rel="external">Google
+        </a></li>
+        <li><a href="https://www.netflix.com" target="_blank" rel="external">Netflix</a></li>
+    </ul>
+</body>
+</html>

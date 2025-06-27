@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset e ajustes gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(196, 231, 196);
+    text-align: justify;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    background-image: linear-gradient(to top, rgb(123, 206, 123), rgb(58, 131, 58), rgb(162, 233, 162));
+    padding: 20px 0;
+    text-align: center;
+}
+
+#htopo {
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#ptopo {
+    color: white;
+    margin-top: 5px;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+nav > a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h1, h2 {
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    color: rgb(1, 114, 1);
+    text-indent: 15px;
+    margin: 20px 0 10px 0;
+}
+
+h2 {
+    background-image: linear-gradient(to right, rgb(194, 228, 194), rgba(212, 243, 212, 0.644), white);
+    max-width: 100%;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+/* Parágrafos e textos */
+p {
+    text-indent: 25px;
+    margin-bottom: 15px;
+}
+
+strong {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Imagens e vídeos responsivos */
+img, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Caixa de curiosidades */
+div {
+    background-color: rgb(134, 209, 184);
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+div > h3 {
+    background-color: rgb(125, 177, 125);
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+div > p {
+    padding: 0 10px;
+    text-indent: 20px;
+}
+
+/* Rodapé */
+footer {
+    width: 100%;
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.3em;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Celulares */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 0.95em;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav > a {
+        font-size: 0.95em;
+    }
+
+    div > h3 {
+        font-size: 1em;
+        padding: 6px;
+    }
+
+    div > p {
+        padding: 5px 10px;
+    }
+}

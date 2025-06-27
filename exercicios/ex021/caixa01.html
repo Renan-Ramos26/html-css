@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{ /* BOX-LEVEL*/
+            /*DISPLAY:INLINE; para transformar o H1 */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            /* OS COMENTÁRIOS SÃO SHOTREND*/
+            /* border: 10px solid darkslategray */
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+           /*  padding: 10 px 10px 10px 10px; 4 valores
+            padding: 10px; 1 valor para todos iguais
+            padding: 10px 20px; 2 valores são 10px em cima e embaixo e 20px direita e esquerda.
+            */
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 35px;
+            margin-left: 20px;
+            /* margin: 20px 20px 35px 20px
+            margin 20px auto 35px auto Centraliza no meio
+            */
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            /* outline: 5px dashed salmon */
+
+        }
+        a { /* INLINE-LEVEL*/
+            /*display:block; para transformar em caixa */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafo também são exemplos de box-level, mas os <a href="https://www.google.com.br" target="_blank" rel="external">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

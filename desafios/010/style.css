@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    margin: 0px;
+    padding: 1px;
+    background-image: linear-gradient( to top, rgb(123, 206, 123), rgb(58, 131, 58), rgb(162, 233, 162));
+}
+#htopo{
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    
+}
+#ptopo {
+    text-align: center;
+    color: white;
+    
+}
+nav > a {
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+nav > a:hover {
+    text-decoration: underline;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(196, 231, 196);
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
+}
+p {
+    text-indent: 25px;
+}
+main{
+    padding: 10px;
+    margin: 0px 100px 0px 100px;
+    background-color: white;
+}
+h1 {
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    text-indent: 15px;
+    color: rgb(1, 114, 1);
+
+
+}
+h2 {
+    text-indent: 15px;
+    background-image: linear-gradient(to right, rgb(194, 228, 194), rgba(212, 243, 212, 0.644) , white);
+    width: 500px;
+    color: rgb(1, 114, 1);
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+strong {
+    color: darkgreen;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+div {
+    background-color: rgb(134, 209, 184);
+    border-radius: 10px;
+    margin: 15px;
+    margin-top: 5px;
+}
+div > h3{
+    background-color: rgb(125, 177, 125);
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 8px;
+    margin: 0px;
+    
+}
+div > p {
+    padding: 10px;
+    text-indent: 20px;
+}
+footer {
+    background-color: darkgreen;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin: 0px;
+}
+footer > p{
+    margin: 0px;
+    padding: 5px;
+    font-size: 12px;
+}
