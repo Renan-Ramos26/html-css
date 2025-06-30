@@ -1,20 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-bt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 11</title>
     <style>
-        div.espaco {
-            background-color: blue;
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        #ext{
+            background-image: url(imagem/espaco.jpg);
+            background-size: 100% 100%;
+            position: relative;
+            height: 100vh;
+            background-color: rgb(21, 21, 133);
+            padding: 0px;
+        }
+        #int{
+            background-image: url(imagem/astronauta.png);
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    <div class="espaco" id="int">
-        <div class="espaco" id="ext">
+    <section id="ext">
+        <article id="int">
 
-        </div>
-    </div>
+        </article>
+    </section>
 </body>
 </html>
