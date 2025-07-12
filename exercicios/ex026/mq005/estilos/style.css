@@ -20,8 +20,22 @@ header > h1 {
     text-align: center;
 }
 
-menu {
+span#burger {
+    background-color: rgb(78, 78, 78);
+    color: white;
+    text-align: center;
+    padding: 10px;
     display: block;
+    cursor: pointer; /* Virar Mãozinha */
+}
+
+span#burger:hover {
+    color: black;
+    background-color: white;
+}
+
+menu {
+    display: none;
 }
 
 menu > ul {
