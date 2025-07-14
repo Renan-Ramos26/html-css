@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.571);
+    text-align: center;
+    width: 350px;
+    height: 250px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+body {
+    background: black url(../imagens/back-pc.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+}
+
+img#tel{display: none;}
+img#tb {display: none;}
+img#pc {display: block;}
+img#tv {display: none;}
+img#pt {display: none;}

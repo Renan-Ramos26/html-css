@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+body {
+    background: black url(../imagens/back-tv.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.571);
+    text-align: center;
+    width: 350px;
+    height: 250px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+img#tel{display: none;}
+img#tb {display: none;}
+img#pc {display: none;}
+img#tv {display: block;}
+img#pt {display: none;}

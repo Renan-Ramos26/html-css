@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: url(../imagens/back-print.jpg);
+}
+
+main {
+    width: 90vw;
+    border: 2px solid black;
+    text-align: center;
+    
+}
+
+main h1 {
+    text-shadow: none;
+    color: black;
+}
+
+main::after {
+    content: "Criado por Renan Sousa Ramos";
+    font-weight: bolder;
+    text-decoration: overline;
+}
+
+img#tel{display: none;}
+img#tb {display: none;}
+img#pc {display: none;}
+img#tv {display: none;}
+img#pt {display: block;}
